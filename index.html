@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        p {
+            margin: 0.5em 0;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .job {
+            margin-bottom: 20px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .job-dates {
+            float: right;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .education {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills ul li {
+            width: 30%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Resume</h1>
+
+    <div class="section">
+        <h2>Experience</h2>
+
+        <div class="job">
+            <h3 class="job-title">15Five — DevOps Engineer <span class="job-dates">December 2020 - Present</span></h3>
+            <ul>
+                <li>CI/CD pipeline YAML configuration with automatic (cron-based) and deploy triggers in CircleCI</li>
+                <li>Kubernetes management (kube-system services, EKS versioning, dependency mapping)</li>
+                <li>Secrets management with AWS parameter store, and Chamber</li>
+                <li>Migration of EC2/Fargate instances to EKS</li>
+                <li>Helm/Helmfile configuration</li>
+                <li>Terraform/Terragrunt IAC management for multiple VPC/account infrastructure</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3 class="job-title">Integral Ad Science — CI/CD Engineer <span class="job-dates">December 2018 – May 2020</span></h3>
+            <ul>
+                <li>Standardized organization-wide deploy process</li>
+                <li>Implemented build versioning and deploy tagging</li>
+                <li>Added pipeline steps for build & deploy metrics to output from Jenkins into the ELK stack</li>
+                <li>Automated deployment evidence commenting on JIRA tickets</li>
+                <li>Secrets management using Vault PKI</li>
+                <li>Server Configuration using Puppet</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3 class="job-title">TIAA — DevOps Engineer <span class="job-dates">July 2016 – December 2018</span></h3>
+            <ul>
+                <li>Maintained vendor applications including GitLab, Cloudbees Jenkins, JIRA, SonarQube, and Artifactory to 99% uptime</li>
+                <li>Linux Administration including user access, service account creation, patch validation, and creating mounts/shared drives</li>
+                <li>Windows AD configuration</li>
+                <li>Wrote PowerShell script for user off-boarding in decommissioned tools</li>
+                <li>Assisted Developer teams with cloud deployments/configurations</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3 class="job-title">TIAA — Java Developer <span class="job-dates">July 2015 – July 2016</span></h3>
+            <ul>
+                <li>Created Tableau web data connector for custom metrics in Artifactory repositories</li>
+                <li>Developed Restful Webpage using STS MVC to track client satisfaction</li>
+                <li>Consolidated complex Sharepoint/excel reports into a single Tableau report</li>
+                <li>Implemented Junit, Jacoco, and sonarlint for 30% minimum code coverage</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p class="education">University of North Carolina at Charlotte, Charlotte, NC — Bachelor of Science in Computer Science</p>
+        <p class="education">Minor in Mathematics</p>
+    </div>
+
+    <div class="section skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>NodeJS</li>
+            <li>Bash</li>
+            <li>Python</li>
+            <li>Powershell</li>
+            <li>YAML</li>
+            <li>Helm/Helmfile</li>
+            <li>Terraform/Terragrunt</li>
+            <li>Linux Administration</li>
+            <li>Docker</li>
+            <li>AWS</li>
+            <li>CI/CD</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
